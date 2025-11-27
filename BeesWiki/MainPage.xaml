@@ -1,0 +1,59 @@
+﻿<Page
+    x:Class="BeesWiki.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:BeesWiki"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Pivot Title="" HorizontalAlignment="Stretch" Margin="10,0,-10,0" VerticalAlignment="Stretch" FontFamily="Segoe UI">
+            <FlyoutBase.AttachedFlyout>
+                <MenuFlyout/>
+            </FlyoutBase.AttachedFlyout>
+            <PivotItem Header="Bees" FontFamily="Segoe UI">
+                <Grid HorizontalAlignment="Left" Height="884" VerticalAlignment="Top" Width="1886">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="68*"/>
+                        <RowDefinition Height="33*"/>
+                    </Grid.RowDefinitions>
+                    <Image HorizontalAlignment="Left" Height="874" VerticalAlignment="Top" Width="1560" Source="https://www.honeybeehaven.org/wp-content/uploads/2013/10/hbh-bee-blog-test.jpg" Grid.RowSpan="2"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="34,118,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="36" Width="782"><Run Text="I am writing to inform children Aged 6 To 12 about the life of bees so children can care more about bees because they are important. We are going to explore The Purpose of Bees, And The Production of Honey."/><LineBreak/><Run/></TextBlock>
+                    <TextBlock HorizontalAlignment="Left" Text="Bees" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="72" FontFamily="Segoe UI" Height="96"/>
+                </Grid>
+            </PivotItem>
+            <PivotItem Header="The Purpose of Bees" Margin="-3,0,27,0" FontFamily="Segoe UI">
+                <Grid HorizontalAlignment="Left" Height="1022" Margin="10,0,0,0" VerticalAlignment="Top" Width="1842">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="7*"/>
+                        <ColumnDefinition Width="37*"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock HorizontalAlignment="Left" Margin="-18,10,0,886" Text=" The Purpose of Bees" TextWrapping="Wrap" FontSize="72" SelectionChanged="TextBlock_SelectionChanged" FontFamily="Segoe UI" Width="673" Grid.ColumnSpan="2"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="32,142,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="36" Grid.ColumnSpan="2" Width="1235" Height="325"><Run Text="First, bees make honey (which will be explained in the next part) and pollinate the plants and trees. One queen runs the whole hive/nest and lays eggs. The Drones: These male bees don't have a stinger and their purpose is to mate with the queen bee. The standard honey bee is called the worker, and makes honey (obviously) and does most of the work around the hive."/><LineBreak/><Run/></TextBlock>
+                    <Image HorizontalAlignment="Left" Height="495" Margin="32,406,0,0" VerticalAlignment="Top" Width="856" Grid.ColumnSpan="2" Source="https://th.bing.com/th/id/OIP.y9tQ48XWegUIdK6JoPwnggHaE8?o=7rm=3&amp;rs=1&amp;pid=ImgDetMain&amp;o=7&amp;rm=3"/>
+                    <Image Grid.Column="1" HorizontalAlignment="Left" Height="495" Margin="628,406,0,0" VerticalAlignment="Top" Width="911" Source="https://cdn.mos.cms.futurecdn.net/kCWrQsrYFj4mrZmS6RdAwS-970-80.jpg.webp"/>
+                </Grid>
+            </PivotItem>
+            <PivotItem Header="The Production of Honey
+">
+                <Grid HorizontalAlignment="Center" Height="1022" VerticalAlignment="Top" Width="1876">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="337*"/>
+                        <RowDefinition Height="174*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="7*"/>
+                        <ColumnDefinition Width="37*"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock HorizontalAlignment="Left" Margin="-18,10,0,322" TextWrapping="Wrap" FontSize="72" SelectionChanged="TextBlock_SelectionChanged" FontFamily="Segoe UI" Width="855" Grid.ColumnSpan="2" VerticalAlignment="Stretch"><Run Text="The Production Of honey"/><LineBreak/><Run/></TextBlock>
+                    <TextBlock HorizontalAlignment="Left" Margin="56,126,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Grid.ColumnSpan="2" Width="1576" SelectionChanged="TextBlock_SelectionChanged_1" FontSize="24" Grid.RowSpan="2" Text="1. Nectar Foraging&#xD;&#xA;Worker bees leave the hive in search of blooming flowers. Using their long, tube-like tongues, they collect nectar￢ﾀﾔa sugary liquid stored inside flowers. Nectar is stored in a special sac called the honey stomach, separate from the bee's digestive stomach.&#xD;&#xA;&#xD;&#xA;2. Enzymatic Transformation Begins&#xD;&#xA;While in the honey stomach, the nectar mixes with special enzymes such as invertase. This breaks down complex sugars (sucrose) into simpler sugars (glucose and fructose), which are less likely to crystallize and easier to store.&#xD;&#xA;&#xD;&#xA;3. Transfer to House Bees&#xD;&#xA;When the forager returns to the hive, she passes the nectar to a house bee through mouth-to-mouth transfer. This not only continues the enzymatic process but also reduces water content.&#xD;&#xA;&#xD;&#xA;4. Evaporation in the Hive&#xD;&#xA;House bees spread the nectar into the hexagonal cells of the honeycomb. They fan their wings rapidly, creating airflow to evaporate excess moisture. The target is around 17￢ﾀﾓ18% water content, which prevents fermentation and spoilage.&#xD;&#xA;&#xD;&#xA;5. Capping the Honey&#xD;&#xA;Once the nectar has thickened into honey, bees seal the cell with a thin layer of beeswax. This keeps the honey fresh and protected for future use, especially during winter when nectar is scarce.&#xD;&#xA;&#xD;&#xA;Honey serves as the colony's main food source, providing energy and nutrients. Beekeepers harvest only the surplus, ensuring the bees keep enough for their own survival.&#xD;&#xA;&#xD;&#xA;"/>
+                </Grid>
+            </PivotItem>
+        </Pivot>
+        <Grid HorizontalAlignment="Center" Height="128" Margin="0,952,0,0" VerticalAlignment="Top" Width="1920"/>
+        <Grid HorizontalAlignment="Center" Height="100" Margin="0,876,0,0" VerticalAlignment="Top" Width="1920"/>
+
+    </Grid>
+</Page>
